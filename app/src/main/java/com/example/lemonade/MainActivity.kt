@@ -115,7 +115,10 @@ class MainActivity : AppCompatActivity() {
                 lemonadeState = RESTART
                 setViewElements()
             }
-            else -> lemonadeState = SELECT
+            else -> {
+                lemonadeState = SELECT
+                setViewElements()
+            }
 
         }
 
